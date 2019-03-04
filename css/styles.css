@@ -1,14 +1,30 @@
 .game {
   display: none;
 }
-footer {
-  display: center;
-}
 #pig1 {
   text-align: center;
+}
+#start {
+  cursor: pointer;
 }
 #down {
   width: 100%;
   height: 100%;
   float: center;
+}
+.form-group {
+  width: 200px;
+  padding-left: 50px;
+}
+.well {
+  padding-left: 75px;
+  padding-right: 50px;
+}
+.game {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+.proceed {
+  padding-top: 30px;
+  padding-bottom: 75px;
 }
