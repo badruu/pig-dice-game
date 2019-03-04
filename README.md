@@ -5,6 +5,15 @@
 This is a multiplayer game where two players take turn in playing the game following rules and guidelines indicated below.
 The player who scores 100 first wins the game.
 
+## Guidelines and rules
+
+1. A player will see their score for each roll. A cumulative score will shown the "total score section" if the hold button is pressed.
+2. A player will have to hand over the play to the next player if the hold button is pressed. Then, player 2 gets to play.
+3. If a player rolls one, the score is counted as zero and it won't reflect on the total score. Similarly, the player will hand over the play to the next player.
+4. Any player who scores 100 or more is declared as the winner.
+
+
+
 ## Behavior Driven Development
 
 |  BEHAVIOUR |  INPUT |OUTPUT   |   |
@@ -13,10 +22,10 @@ The player who scores 100 first wins the game.
 | if a player clicks roll and number 1 is generated,    |  1 | initial total score = 5, round score= 0, total score= 5  |   |
 |  if a player scores 100 or more  |  player 1, total score =102 |  Badrudin is the winner pops up |   |
 
-
-## Rules
-** Each correct answer scores 10 marks.
-** Only selected choices are marked, and if a wrong answer is selected, a zero (0) is awarded.
+## set-up/installation requirements
+ A) fork this repository to your github
+ B) use the link on the description to open it with any browser of your choice
+ C) the link: https://badruu.github.io/pig-dice-game/
 
 ## Known Bugs
 Currently, there are no known bugs.
@@ -24,6 +33,8 @@ Currently, there are no known bugs.
 *Javascript*
 *HTML*
 *CSS*
+*jQuery*
+*Bootstrap*
 ## Support and contact details
 For details, you can reach me at,
 email: badrubadri92@gmail.com
