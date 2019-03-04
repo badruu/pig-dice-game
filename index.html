@@ -2,9 +2,81 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>PIG DICE GAME</title>
   </head>
   <body>
+    <div class="container">
+      <div class="info">
+        <div class="jumbotron">
+          <h1>PIG DICE GAME</h1>
+          <form id=player1>
+            <div class="form-group">
+              <label for="player1Name">Name of player 1</label>
+              <input type="text" required class="player1Name form-control">
+            </div>
+          </form>
+          <form id=player2>
+            <div class="form-group">
+              <label for="player2Name">Name of player 2</label>
+              <input required type="text" class="player2Name form-control">
+            </div>
+          </form>
+          <button class="btn btn-info" id="start">PROCEED</button>
+          </div>
+      </div>
+      </div>
+
+      <div class="container2">
+        <div class="game">
+          <div class="row">
+            <div class="col-md-6">
+              <h2>player1: <span id= "player1Name"></span></h2>
+              <button id="roll-p1" class="btn btn-success">ROLL</button>
+              <button id="hold-p1" class="btn btn-danger">Hold</button>
+              <h3>SCORES:<span id="die-p1"></span></h3>
+              <p>Round Total: <span id="round-total-1"></span></p>
+              <p>Total Score: <span id="total-score-1"></span></p>
+              <p>Comments: <span id="comments"></span></p>
+            </div>
+
+            <div class="col-md-6">
+              <h2>player2: <span id= "player2Name"></span></h2>
+              <button id="roll-p2" class="btn btn-success">ROLL</button>
+              <button id="hold-p2" class="btn btn-danger">Hold</button>
+              <h3>SCORES:<span id="die-p2"></span></h3>
+              <p>Round Total: <span id="round-total-2"></span></p>
+              <p>Total Score: <span id="total-score-2"></span></p>
+            </div>
+          </div>
+          <button id="new-game" class="btn-success btn">NEW GAME</button>
+        </div>
+      </div>
+      <footer>
+      <div class="row">
+        <div class="col-md-3">
+          <h4>Created by:<br></h4>
+          <p><strong>Badrudin Noor</strong></p>
+        </div>
+        <div class="col-md-3">
+          <img id="logo" src="img/my-logo.jpg">
+        </div>
+        <div class="col-md-3">
+        <p>WANTED TO ASK SOMETHING </p><br><br>
+        <img id="curious" src="img/curious.jpg">
+        </div>
+
+
+        <div class="col-md-3">
+          <p>You can reach me at:<br><br>
+             <a href="<a href="badrubadri92@gmail.com">MY Email</a></p>
+        </div>
+      </div>
+      </footer>
+
 
   </body>
 </html>
