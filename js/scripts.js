@@ -16,7 +16,7 @@ function Player(turn) {
 Player.prototype.rollOne = function() {
   if (this.roll === 1) {
     this.roundScore = 0;
-    alert(this.playerName + ", "  + "you are unlucky, you rolled 1! Pass over the dice!")
+    alert(this.playerName + ", "  + " you are unlucky, you rolled 1! Pass over the dice!")
   } else {
     this.roundScore += this.roll;
   }
@@ -51,7 +51,7 @@ $(document).ready(function() {
     player1 = new Player(true);
     player2 = new Player(false);
     $(".game").show();
-    $(".info").hide();
+    $(".preface").hide();
 
     var player1Name = $(".player1Name").val();
     $("#player1Name").text(player1Name);
@@ -97,7 +97,20 @@ $(document).ready(function() {
     $("#die-p2").empty();
     player2.winner();
   });
-
+  $("button#new-game").click(function(event) {
+    event.preventDefault();
+    $(".game").hide();
+    clearValues();
+    player1.newGame();
+    player2.newGame();
+    $("#total-score-1").empty();
+    $("#round-total-1").empty();
+    $("#die-p1").empty();
+    $("#total-score-2").empty();
+    $("#round-total-2").empty();
+    $("#die-p2").empty();
+    $(".preface").show();
+  })
 
 
 });
