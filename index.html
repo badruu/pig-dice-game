@@ -11,46 +11,13 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="jumbotron">
-      <h1 id="pig1">PIG DICE GAME <br><br></h1>
-    </div>
-
-    <div class="row">
-      <div class="col-md-6">
-        <div class="well">
-          <h1><small>Guidelines</small>
-            <hr>
-          </h1>
-          <p>
-            Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":<br>
-            1)If the player rolls a 1, they score nothing and it becomes the next player's turn.<br>
-            2)If the player rolls any other number, it is added to their turn total and the player's turn continues.<br>
-            3)If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.<br>
-            <strong>The first player to score 100 or more points wins.</strong>
-          </p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="well">
-          <p>
-            <h1><small>For example,</small><br>
-              <hr>
-            </h1>
-            The first player, Anne, begins a turn with a roll of 5.<br>
-            Anne could hold and score 5 points, but chooses to roll again.<br>
-            Anne rolls a 2, and could hold with a turn total of 7 points, but chooses to roll again.<br>
-            Anne rolls a 1, and must end her turn without scoring.<br>
-            The next player, Bob, rolls the sequence 4-5-3-5-5, after which he chooses to hold, and adds his turn total of 22 points to his score.<br>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="info">
+  <div class="container1">
+    <div class="preface">
       <div class="jumbotron">
-        <h2 id="pig1"><small>Enter your details <br> before you play</small></h2>
+        <h1 id="pig1">PIG DICE GAME <br><br></h1>
+      </div>
+      <div class="info">
+        <h2 id="pig1"><small>Enter player(s) details <br> before you play</small></h2>
         <hr>
         <div class="row">
           <div class="col-md-6">
@@ -70,10 +37,43 @@
             </form>
           </div>
         </div>
-        <button class="btn btn-info" id="start">PROCEED</button>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="well">
+            <h1><small>Guidelines</small>
+              <hr>
+            </h1>
+            <p>
+              Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":<br>
+              1)If the player rolls a 1, they score nothing and it becomes the next player's turn.<br>
+              2)If the player rolls any other number, it is added to their turn total and the player's turn continues.<br>
+              3)If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.<br>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="well">
+            <p>
+              <h1><small>For example,</small><br>
+                <hr>
+              </h1>
+              The first player, Anne, begins a turn with a roll of 5.<br>
+              Anne could hold and score 5 points, but chooses to roll again.<br>
+              Anne rolls a 2, and could hold with a turn total of 7 points, but chooses to roll again.<br>
+              Anne rolls a 1, and must end her turn without scoring.<br>
+              The next player, Bob, rolls the sequence 4-5-3-5-5, after which he chooses to hold, and adds his turn total of 22 points to his score.<br>
+              <strong>The first player to score 100 or more points wins.</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="proceed">
+        <button class="btn-lg btn-block btn-info" id="start">PROCEED</button>
       </div>
     </div>
   </div>
+
   <div class="container2">
     <div class="game">
       <div class="row">
@@ -84,7 +84,6 @@
           <h3>SCORES:<span id="die-p1"></span></h3>
           <p>Round Total: <span id="round-total-1"></span></p>
           <p>Total Score: <span id="total-score-1"></span></p>
-          <p>Comments: <span id="comments"></span></p>
         </div>
         <div class="col-md-6">
           <h2>player2: <span id="player2Name"></span></h2>
@@ -95,28 +94,11 @@
           <p>Total Score: <span id="total-score-2"></span></p>
         </div>
       </div>
-      <button id="new-game" class="btn-success btn">NEW GAME</button>
+      <div class="restart">
+        <button id="new-game" class="btn-success btn-lg btn-block">NEW GAME</button>
+      </div>
     </div>
   </div>
-  <footer>
-    <div class="row">
-      <div class="col-md-3">
-        <h4>Created by:<br></h4>
-        <p><strong>Badrudin Noor</strong></p>
-      </div>
-      <div class="col-md-3">
-        <img id="logo" src="img/my-logo.jpg">
-      </div>
-      <div class="col-md-3">
-        <p>WANTED TO ASK SOMETHING </p><br><br>
-        <img id="curious" src="img/curious.jpg">
-      </div>
-      <div class="col-md-3">
-        <p>You can reach me at:<br><br>
-          <a href="<a href=" badrubadri92@gmail.com">MY Email</a></p>
-      </div>
-    </div>
-  </footer>
 </body>
 
 </html>
