@@ -81,7 +81,7 @@ body
 }
 .btn-last
 {
-  background: linear-gradient(to right, #131212, #2F0C0C, #650D0D, #B41414,#650D0D,#2F0C0C,#131212);
+  background: linear-gradient(to right top, #18292d, #1e5259, #197f86, #0bafb0, #0ae2d8, #197f86, #1e5259, #18292d);
   color: #fff;
 
 }
